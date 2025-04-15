@@ -15,6 +15,6 @@ public class ProductService {
 
     public List<Product> getAllProducts() {
 
-        return repo.findAll();
+        return repo.findAll(); //list of products
     }
 }
