@@ -19,7 +19,7 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  int id;
     private String name;
-    private String desc;
+    private String description;
     private String brand;
     private BigDecimal price;
     private String category;
@@ -27,8 +27,9 @@ public class Product {
 
     // @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")  NOW TAKE CARE BY FRONTEND _
     private Date releaseDate;
-//    private boolean available;
-//    private int quantity;
+    private boolean productAvailable;
+
+    private int stockQuantity;
     private String imageName;
     private String imageType;
     @Lob
